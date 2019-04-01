@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* 深圳市静江网络科技有限公司 */
+*,*:before,*:after {-webkit-box-sizing:border-box; box-sizing:border-box;margin:0; padding:0;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust: 100%;}
+body{position:absolute; font:16px/1 "Microsoft YaHei", Helvetica, sans-serif !important;color:#666;background:#fff;width: 100%;height: 100%;}
+input{outline: none;}
+input[type="button"],button{cursor: pointer;border: none;outline: none;}
+ul,ol,li{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+img{border:none;}
+a{text-decoration:none; color:#666;}
+a:hover{text-decoration:none;}
+.clearfix{zoom:1}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.fl{float: left;}
+.fr{float: right;}
+*::-webkit-scrollbar{width: 2px;background-color: #e1e1e1;}
+*::-webkit-scrollbar-thumb{background-color: #ccc;}
+.flex{display: flex;justify-content: space-around;}
+/* 初始化样式结束 */
+
+.center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+body{
+	max-width: 750px;
+	margin: 0 auto;
+	background-color: #eee;
+}
+.header,
+.mine{
+	width: 100%;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+.header span.back{
+	position: absolute;
+	left: 2%;
+	top: .3rem;
+	font-size: 1rem;
+	width: 2rem;
+	height: 2rem;
+	background: url(../images/back_l.png) no-repeat center/35%;
+}
+.header a{
+	position: absolute;
+	z-index:5;
+	left: 23%;
+	bottom: 3rem;
+	padding: 3px 8px;
+	background: #000;
+	width: 5.3rem;
+	height:1.6rem;
+	opacity: 0;
+	border-radius: 3px;
+	font-size: .9rem;
+	font-weight: bold;
+}
+.back_w{
+	position: absolute;
+	z-index: 66;
+	left: 3%;
+	top: 10px;
+	font-size: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background:rgba(0,0,0,.3) url(../images/back_w.png) no-repeat center/40% !important;
+}
+.header h3{
+	text-align: center;
+	font-size: 1.2rem;
+	height: 2.6rem;
+	line-height: 2.5rem;
+	border-bottom: 1px solid #eee;
+}
+.mine{
+	padding-top: 2.9rem;
+	margin-bottom: 5rem;
+}
+.list{
+	width: 100%;
+	font-size: 0;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+.list>div{
+	display: inline-block;
+	height: 7rem;
+	vertical-align: top;
+}
+.list .choose{
+	width: 15%;
+}
+.list .particulars{
+	width: 30%;
+	font-size: 1rem;
+}
+.list .particulars h4{
+	margin-top: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.list .particulars p.name{
+	margin-top: .5rem;
+}
+.list .particulars p.price{
+	margin-top: 1.5rem;
+	color: #f00;
+	font-size: 0.9rem;
+}
+.footer{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 6;
+}
+.footer ul{
+	width: 100%;
+	padding: 8px 0;
+	border-top: 1px solid #eee;
+}
+.footer ul li{
+	height: 3.2rem;
+	padding-top: 2.2rem;
+	font-size: 0.9rem;
+}
+.footer ul .home_page.on{
+	background: url(../images/home_page_02.png) no-repeat top/1.7rem;
+}
+.footer ul .more{
+	background: url(../images/more_01.png) no-repeat top/1.7rem;
+}
+.footer ul .shopping_trolley{
+	background: url(../images/shopping_trolley_01.png) no-repeat top/1.9rem;
+}
+.footer ul .personal_center{
+	background: url(../images/personal_center_01.png) no-repeat top/1.7rem;
+}
+.footer ul .home_page{
+	background: url(../images/home_page_01.png) no-repeat top/1.7rem;
+}
+.footer ul .more.on{
+	background: url(../images/more_02.png) no-repeat top/1.7rem !important;
+}
+.footer ul .shopping_trolley.on{
+	background: url(../images/shopping_trolley_02.png) no-repeat top/1.9rem !important;
+}
+.footer ul .personal_center.on{
+	background: url(../images/personal_center_02.png) no-repeat top/1.7rem !important;
+}
+.footer_color{
+	color: #ec7e38 !important;
+}
+.footer li a{
+	color: inherit;
+}
+.footer.one{
+	height: 3rem;
+	text-align: center;
+	background-color: #EE2B2B;
+	color: #fff;
+	line-height: 2.8rem;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+}
+
+.empty{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+.empty img{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%);
+	width: 50%;
+}
+.empty h4,
+.empty p,
+.empty a{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	color: #ccc;
+	font-size: 1.4rem;
+	text-align: center;
+}
+.empty p{
+	top: 55%;
+	color: #ddd;
+	font-size: 1.1rem;
+}
+.empty a{
+	width: 30%;
+	top: 60%;
+	margin-left: 35%;
+	border: 1px solid #aaa;
+	height: 2rem;
+	line-height: 1.9rem;
+	font-size: 1.2rem;
+	color: #aaa;
+	border-radius: 20px;
+}

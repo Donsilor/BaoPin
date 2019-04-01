@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="format-detection" content="telephone=no">
+ 		<meta name="renderer" content="webkit">
+ 	 	<meta http-equiv="Cache-Control" content="no-transform"/>
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopping_car.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<span class="back"></span>
+			<h3>购物车</h3>
+			<span class="finish">编辑</span>
+		</div>
+		<div class="mine">
+			<div class="list">
+				<div class="choose">
+					<span class="choose_btn"></span>
+				</div>
+				<div class="pic">
+					<img src="images/apple.png"/>
+				</div>
+				<div class="particulars">
+					<h4>产品名称</h4>
+					<p class="name">精品红富士</p>
+					<p class="price">￥108.00</p>
+					<div class="contral">
+						<span class="subtraction">-</span>
+						<span class="number">1</span>
+						<span class="add">+</span>
+					</div>
+				</div>
+				<span class="del"></span>
+			</div>
+			<div class="list">
+				<div class="choose">
+					<span class="choose_btn"></span>
+				</div>
+				<div class="pic">
+					<img src="images/apple.png"/>
+				</div>
+				<div class="particulars">
+					<h4>产品名称</h4>
+					<p class="name">精品红富士</p>
+					<p class="price">￥108.00</p>
+					<div class="contral">
+						<span class="subtraction">-</span>
+						<span class="number">1</span>
+						<span class="add">+</span>
+					</div>
+				</div>
+				<span class="del"></span>
+			</div>
+			<div class="list">
+				<div class="choose">
+					<span class="choose_btn"></span>
+				</div>
+				<div class="pic">
+					<img src="images/apple.png"/>
+				</div>
+				<div class="particulars">
+					<h4>产品名称</h4>
+					<p class="name">精品红富士</p>
+					<p class="price">￥108.00</p>
+					<div class="contral">
+						<span class="subtraction">-</span>
+						<span class="number">1</span>
+						<span class="add">+</span>
+					</div>
+				</div>
+				<span class="del"></span>
+			</div>
+			<div class="check_all clearfix">
+				<div class="fl"><span></span>全选</div>
+				<span class="close_account">结算：</span>
+				<span class="character">￥<em>0</em></span>
+				<div class="fr del">删除</div>
+				<div class="fr account">去结算（<span>0</span>）</div>
+			</div>
+			<div class="empty">
+				<img src="images/empty_car.png"/>
+				<h4>空空如也</h4>
+				<p>每天给自己一点惊喜吧</p>
+				<a href="javascript:void(0)">去逛逛</a>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="flex">
+				<li class="home_page"><a href="home_page.html">首页</a></li>
+				<li class="more"><a href="more.html">更多爆品</a></li>
+				<li class="shopping_trolley footer_color on"><a href="shopping_car.html">购物车</a></li>
+				<li class="personal_center"><a href="personal_center.html">个人中心</a></li>
+			</ul>
+		</div>
+		
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var num = 0,
+				n = 1;
+			$('.header .finish').click(function(){
+				if($(this).text() == '编辑'){
+					$(this).text('完成');
+					$('.account').hide();
+					$('.character').hide();
+					$('.close_account').hide();
+					$('.check_all .del').show();
+					
+				}else{
+					$(this).text('编辑');
+					$('.account').show();
+					$('.character').show();
+					$('.close_account').show();
+					$('.check_all .del').hide();
+				}
+			})
+			$('.choose_btn').click(function(){
+				if(!$(this).is('.on')){
+					num++;
+					closeAccount();
+					$(this).addClass('on');
+				}else{
+					num--;
+					closeAccount();
+					$(this).removeClass('on');
+				}
+			})
+			$('.check_all .fl').click(function(){
+				if(!$(this).is('.on')){
+//					num = $('.list').length;
+					closeAccount();
+					$(this).addClass('on');
+					$('.choose_btn').addClass('on');
+				}else{
+					num = 0;
+//					closeAccount();
+					$(this).removeClass('on');
+					$('.choose_btn').removeClass('on');
+				}
+			})
+			
+			if($('.list').length == 0){
+				$('.finish').text(' ');
+				$('.check_all').hide();
+			}else{
+				$('.finish').text('编辑');
+				$('.check_all').show();
+				$('.empty').hide();
+			}
+			
+			
+			$('.add').click(function(){
+				var n = $(this).prev().text();
+				n++;
+				$(this).prev().text(n);
+				
+//				ever(n);
+			})
+			$('.subtraction').click(function(){
+				var n = $(this).next().text();
+				if(n > 1){
+					n--;
+				$(this).next().text(n);
+				}
+			})
+			function closeAccount(){
+				$('.list').map(o => {
+					var s = $($('.list')[o]).children('.particulars').children('.contral').children('.number').text(); 
+					console.log(s)
+				})
+//				t = every * 108;
+//				$('.check_all .character em').text(t);
+//				$('.check_all .account span').text(num);
+			}
+			function ever(_this,n){
+//				$(_this).text(n);
+			}
+		</script>
+	</body>
+</html>

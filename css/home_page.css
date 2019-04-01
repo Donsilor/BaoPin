@@ -1,0 +1,294 @@
+body{
+	background-color: #fff;
+}
+.header{
+	width: 100%;
+	height: 2.5rem;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.2rem;
+	height: auto;
+	position: relative;
+	/*font-weight: bold;*/
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+	height: auto;
+}
+.content{
+	width: 100%;
+	padding-bottom:7rem;
+	font-size: 0;
+}
+.trait_box,
+.particulars_box{
+	width: 100%;
+	position: relative;
+}
+.trait_box{
+	height: 21.5rem;
+}
+.particulars_box{
+	height: 28.5rem;
+}
+.trait_box h3,
+.particulars_box h3{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	font-size: 1.3rem;
+	text-align: center;
+	/*font-weight: normal;*/
+	margin-top: .8rem;
+}
+.particulars img{
+	width: 100%;
+}
+.environment{
+	position: absolute;
+	left: 0;
+	bottom: 3.5rem;
+	width: 100%;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.environment span{
+	color: #509906;
+	font-weight: bold;
+}
+.purpose{
+	position: absolute;
+	left: 50%;
+	bottom: 1rem;
+	transform: translateX(-50%);
+	font-size: 0.6rem;
+	background-color: #b5b5b5;
+	padding: 3px;
+	color: #fff;
+	border-radius: 3px;
+}
+.trait img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.trait>div{
+	position: absolute;
+	text-align: center;
+	font-size: .8rem;
+}
+.trait_tittle_01{
+	top: 8.5rem;
+	left: 6.1%;
+	line-height: 1.8rem;
+}
+.trait_tittle_02{
+	top: 4rem;
+	left: 30%;
+	line-height: 1.8rem;
+}
+.trait_tittle_03{
+	top: 3.8rem;
+	right: 21%;
+	line-height: 1.8rem;
+}
+.trait_tittle_04{
+	top: 9.5rem;
+	right: 6.6%;
+	line-height: 1.8rem;
+}
+.trait .title{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 2px solid #ec7e38;
+	font-size: .9rem;
+	line-height: 1.1rem;
+	padding: 0.8rem 0.6rem;
+	color: #ec7e38;
+}
+.particulars_box{
+	height: 29rem;
+	margin-bottom: 2px;
+}
+.particulars_box h3{
+	color: #71a422;
+}
+.sbuhead{
+	position: absolute;
+	left: 50%;
+	top: 2.8rem;
+	transform: translateX(-50%);
+	width: 54%;
+	text-align: center;
+	padding: 10px 0;
+	font-size: .7rem;
+	color: #71a422;
+	border: 1px solid #71a422;
+}
+.particulars ul{
+	position: absolute;
+	right: 1%;
+	top: 12rem;
+}
+.particulars li{
+	font-size: .6rem;
+	line-height: 1.2rem;
+	color: #fff;
+}
+.nature,
+.irrigate,
+.sunshine,
+.soil{
+	position: relative;
+	width: 100%;
+	margin-bottom: 2px;
+}
+.nature img,
+.irrigate img,
+.sunshine img,
+.soil img{
+	width: 100%;
+}
+.nature .title,
+.irrigate .title,
+.sunshine .title,
+.soil .title{
+	width: 37%;
+	height: 4.5rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 2%;
+	background-color: rgba(225,227,226,1);
+}
+.nature .title h4,
+.irrigate .title h4,
+.sunshine .title h4,
+.soil .title h4{
+	font-size: 1.3rem;
+	text-align: center;
+	font-weight: normal;
+	margin: 0.3rem 0 0.5rem;
+	letter-spacing: 2px;
+	color: #000;
+}
+.nature .title p,
+.irrigate .title p,
+.sunshine .title p,
+.soil .title p{
+	font-size: .6rem;
+	text-align: center;
+	margin-top: 0.3rem;
+	padding-left: 0.3rem;
+	color: #000;
+}
+.nutrition img{
+	width: 100%;
+}
+.nutrition{
+	width: 86%;
+	height: 29rem;
+	margin: 0 auto;
+}
+.nutrition h2{
+	font-size: 2rem;
+	margin-top: .5rem;
+	text-align: center;
+	color: #71a422;
+	letter-spacing: 2px;
+}
+.nutrition h4{
+	font-size: 1.1rem;
+	margin-top: .5rem;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.nutrition p{
+	font-size: .7rem;
+	margin:  1rem 0;
+	text-align: center;
+}
+.nutrition_ingredient{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.nutrition_ingredient li{
+	font-size: 1rem;
+	color: #71a422;
+	line-height: 2rem;
+	font-weight: bold;
+}
+.nutrition_ingredient img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	
+}
+.parameter{
+	width: 100%;
+	margin-top: 2rem;
+}
+.parameter h2{
+	text-align: left;
+	margin-bottom: 2rem;
+}
+.parameter li{
+	font-size: .8rem;
+	line-height: .9rem;
+}
+.parameter img{
+	width: 50%;
+	height: auto;
+}
+.small_img{
+	width: 100%;
+}
+.small_img ul{
+	width: 100%;
+	height: auto;
+}
+.small_img ul li{
+	width: 25%;
+	margin: 0 2px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	font-weight: bold;
+}
+.small_img ul li img{
+	width: 100%;
+}
+.shopping_car{
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom:4.5rem;
+	width: 100%;
+}
+.shopping_car a{
+	position: absolute;
+	z-index:8;
+	right: .7rem;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: .9rem;
+	color: #fff;
+}
+.shopping_car img{
+	width: 30%;
+	height: auto;
+	margin: 3px;
+}
+
+/*.swiper-pagination-bullet-active{
+	background:#ec7e38!important;
+}
+.swiper-pagination-bullet{
+	background: #fff;
+}*/

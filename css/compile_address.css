@@ -1,0 +1,23 @@
+.mine li{
+	position: relative;
+	width: 100%;
+	padding-left: 3%;
+	background-color: #fff;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	border-bottom: 1px solid #eee;
+	font-size: 1rem;
+}
+.mine input{
+	position: absolute;
+	left: 17%;
+	height: 2.3rem;
+	width: 70%;
+	margin-left: 2rem;
+	border: none;
+	font-size: .9rem;
+}
+.mine input::-webkit-input-placeholder{
+	color: #ccc;
+}
+

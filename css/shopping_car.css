@@ -1,0 +1,149 @@
+.header span.finish{
+	position: absolute;
+	right: 2%;
+	top: 29%;
+	font-size: 1rem;
+}
+.mine{
+	padding-bottom: 8rem;
+}
+.list{
+	width: 100%;
+	font-size: 0;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+.list>div{
+	display: inline-block;
+	height: 10rem;
+	vertical-align: top;
+}
+.list .choose{
+	width: 10%;
+}
+.choose .choose_btn{
+	display: block;
+	width: 1.3rem;
+	height: 1.3rem;
+	border: 1px solid #999;
+	border-radius: 50%;
+	margin: 2rem 50%;
+}
+.choose .choose_btn.on{
+	border-color: #EE2B2B;
+	background:url(../images/choose.png) no-repeat center/100%;
+}
+.list .pic{
+	width: 30%;
+	text-align: center;
+	position: relative;
+}
+.list .pic img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	height: auto;
+}
+.list .particulars{
+	width: 30%;
+	font-size: 1rem;
+}
+.list .particulars h4{
+	margin-top: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.list .particulars p.name{
+	margin-top: .5rem;
+}
+.list .particulars p.price{
+	margin-top: 1.5rem;
+	color: #f00;
+	font-size: 0.9rem;
+}
+.particulars .contral{
+	margin-top: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.particulars .contral>span{
+	display: block;
+	width: 34%;
+	height: 2rem;
+	line-height: 1.8rem;
+	text-align: center;
+	border: 1px solid #E2E0E0;
+}
+span.del{
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin-left: 18%;
+	margin-top: 2rem;
+	background: url(../images/delete.png) no-repeat center/66%;
+}
+.check_all{
+	position: fixed;
+	left: 0;
+	bottom: 4.5rem;
+	height: 3rem;
+	line-height: 3rem;
+	width: 100%;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+}
+.check_all .fl{
+	margin: 0 9%;
+}
+.check_all .fl span{
+	position: absolute;
+	left: 3%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 1px solid #999;
+	margin-right: 1rem;
+}
+.check_all .fl.on span{
+	border-color: #EE2B2B;
+	background:url(../images/choose.png) no-repeat center/100%;
+}
+.check_all .character{
+	color: #f00;
+}
+.check_all .character em{
+	color: inherit;
+	font-style: normal;
+}
+.check_all .del{
+	height: 1.8rem;
+	width: 5rem;
+	border-radius: 2rem;
+	border: 1px solid #999;
+	text-align: center;
+	line-height: 1.8rem;
+	margin-top: .6rem;
+	margin-right: 10px;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	display: none;
+}
+.check_all .account{
+	height: 3rem;
+	padding: 0 1rem 0 1.3rem;
+	background-color: #EE2B2B;
+	text-align: center;
+	line-height: 2.8rem;
+	font-size: 1rem;
+	color: #fff;
+}
+.empty{
+	background-color: #eee !important;
+}
+
+

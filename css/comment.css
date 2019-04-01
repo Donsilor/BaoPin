@@ -1,0 +1,101 @@
+body{
+	background-color: #fff;
+}
+.header{
+	border-bottom: 1px solid #eee;
+}
+.commodity_grade{
+	width: 100%;
+	margin-top: 1rem;
+}
+.commodity_grade>div{
+	display: inline-block;
+}
+.pic_box{
+	width: 30%;
+	text-align: center;
+	margin-left: 5%;
+}
+.pic_box img{
+	width: 70%;
+	height: auto;
+}
+.garde{
+	vertical-align: top;
+	width: 50%;
+	height: 6rem;
+	padding-top: 1rem;
+}
+.garde .star{
+	margin-top: 1rem;
+	
+}
+.star img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 1px;
+}
+textarea{
+	height: 10rem;
+	width: 92%;
+	margin: 5px 4%;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 1rem;
+	outline: none;
+}
+textarea::-webkit-input-placeholder{
+    color:#ddd;
+}
+textarea:-moz-placeholder{
+    color:#ddd;
+}
+textarea::-moz-placeholder{
+    color:#ddd;
+}
+textarea:-ms-input-placeholder{
+    color:#ddd;
+}
+.add_pic{
+	width: 100%;
+}
+.add_pic>div{
+	display: inline-block;
+}
+.add_pic .add_btn{
+	width: 5rem;
+	height: 5rem;
+	background-color: #eee;
+	margin: 0 6% 0 4%;
+	border-radius: 5px;
+	position: relative;
+}
+.add_pic .add_btn img{
+	width: 70%;
+	height: 70%;
+}
+.add_pic .pic{
+	vertical-align: top;
+	width: 60%;
+	height: 5rem;
+}
+.add_pic .pic img{
+	width: 4rem;
+	height: 4rem;
+	margin-top: .5rem;
+	margin-right: 3%;
+}
+.confirm{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 6;
+	width: 100%;
+	height: 4rem;
+	text-align: center;
+	line-height: 4rem;
+	background-color: #EE2B2B;
+	color: #fff;
+	font-size: 1.2rem;
+}

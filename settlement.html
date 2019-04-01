@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="format-detection" content="telephone=no">
+ 		<meta name="renderer" content="webkit">
+ 	 	<meta http-equiv="Cache-Control" content="no-transform"/>
+		<title>吾优爆品网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/settlement.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<span class="back"></span>
+			<h3>吾优爆品网</h3>
+		</div>
+		<div class="mine">
+			<img src="images/explosive_img01.png"/>
+			<div class="content">
+				<div class="pic_box">
+					<img src="images/apple.png"/>
+					<span>￥108.00</span>
+				</div>
+				产品
+				<div class="set_meal">
+					<div class="on">套餐一</div>
+					<div>套餐二</div>
+					<div>套餐三</div>
+				</div>
+				<div class="number clearfix">
+					<div class="fl">数量</div>
+					<div class="fr">
+						<div class="subtract">-</div>
+						<div class="num">1</div>
+						<div class="add">+</div>
+					</div>
+				</div>
+				<div class="confirm">
+					确定
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/common.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$('.set_meal div').click(function(){
+				$(this).addClass('on').siblings().removeClass('on');
+			})
+			var t = 1;
+			$('.add').click(function(){
+				t++ ;
+				$('.number .num').text(t);
+			})
+			$('.subtract').click(function(){
+				if(t > 1){
+					t-- ;
+				}
+				$('.number .num').text(t);
+			})
+			$('.confirm').click(function(){
+				location.pathname = 'BaoPin/leave_message.html';
+			})
+		</script>
+	</body>
+</html>

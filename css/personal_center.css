@@ -1,0 +1,85 @@
+.header{
+	width: 100%;
+	background: url(../images/background.png);
+	height: 9rem;
+}
+.mine{
+	margin-top: 6.7rem;
+}
+.infomation{
+	text-align: center;
+	padding-top: .5rem;
+}
+.infomation .backcolor{
+	margin: .6rem auto .4rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: #eee;
+}
+.infomation .backcolor a{
+	display: block;
+	width: 40%;
+	height: 100%;
+	border: 1px solid red;
+}
+.infomation img{
+	width: 50%;
+	margin-top: 1rem;
+}
+.infomation p{
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-top: .4rem;
+	
+}
+.mine{
+	width: 100%;
+}
+.generalize{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	background-color: #fff;
+	font-size: 1.2rem;
+	padding-left: 60px;
+	margin-bottom: 10px;
+	background:#fff url(../images/generalize.png) no-repeat 6%/6%;
+}
+.generalize a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.mine ul{
+	width: 100%;
+	height: auto;
+}
+.mine li{
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1rem;
+	padding-left: 60px;
+	margin-bottom: 4px;
+	background-color: #fff;
+}
+.mine a:first-child li{
+	background:#fff url(../images/unfilled_orders.png) no-repeat 6%/6%;
+}
+.mine a:nth-child(2) li{
+	background:#fff url(../images/shipped.png) no-repeat 6%/6%;
+}
+.mine a:nth-child(3) li{
+	background:#fff url(../images/finish2.png) no-repeat 6%/6%;
+}
+.mine a:nth-child(4) li{
+	background:#fff url(../images/address.png) no-repeat 6%/6%;
+}
+.mine a:nth-child(5) li{
+	background:#fff url(../images/performance.png) no-repeat 6%/6%;
+}
+.mine a:nth-child(6) li{
+	background:#fff url(../images/quit.png) no-repeat 6%/6%;
+}

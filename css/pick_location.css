@@ -1,0 +1,55 @@
+body{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.map{
+	height: 100%;
+	width: 100%;
+}
+.map img{
+	width: 100%;
+	height: 100%;
+}
+.packup_list{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+}
+.packup{
+	width: 100%;
+	background-color: #fff;
+	font-size: .9rem;
+	border-bottom: 3px solid #eee;
+}
+.packup>div{
+	height: 3rem;
+	width: 92%;
+	margin-left: 4%;
+}
+.packup>div:first-child{
+	padding-top: .7rem;
+}
+.packup>div:first-child .fl{
+	font-size: 1rem;
+}
+.packup>div:first-child .fr{
+	text-align: right;
+}
+.packup>div:last-child .fl{
+	padding-left: 2.5rem;
+	width: 48%;
+	background: url(../images/address.png) no-repeat 3%/12%;
+}
+.packup>div:last-child .fr{
+	width: 3.2rem;
+	height: 1.4rem;
+	line-height: 1.2rem;
+	text-align: center;
+	border: 1px solid #999;
+	border-radius: 10px;
+}

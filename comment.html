@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="format-detection" content="telephone=no">
+ 		<meta name="renderer" content="webkit">
+ 	 	<meta http-equiv="Cache-Control" content="no-transform"/>
+		<title>评价晒单</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/comment.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<span class="back"></span>
+			<h3>评价晒单</h3>
+		</div>
+		
+		<div class="mine">
+			<div class="commodity_grade">
+				<div class="pic_box">
+					<img src="images/apple.png"/>
+				</div>
+				<div class="garde">商品评分
+					<div class="star">
+						<img src="images/star0.png"/>
+						<img src="images/star0.png"/>
+						<img src="images/star0.png"/>
+						<img src="images/star0.png"/>
+						<img src="images/star0.png"/>
+					</div>
+				</div>
+			</div>
+			<textarea placeholder="您对商品满意吗" rows="10" cols="50"></textarea>
+			<div class="add_pic">
+				<div class="add_btn">
+					<img src="images/add.png" class="center"/>
+				</div>
+				<div class="pic">
+					<img src="images/apple.png"/>
+					<img src="images/apple.png"/>
+					<img src="images/apple.png"/>
+				</div>
+			</div>
+			<a href="comment_on_success.html" class="confirm">
+				提交
+			</a>
+		</div>
+	
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/common.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$('.star img').click(function(){
+				if($(this).attr('src').indexOf('star0') !== -1){
+					$(this).attr('src','images/star1.png');
+				}else $(this).attr('src','images/star0.png');
+			})
+		</script>
+	</body>
+</html>
+

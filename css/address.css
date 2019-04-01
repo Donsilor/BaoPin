@@ -1,0 +1,94 @@
+.address_box{
+	width: 100%;
+	background-color: #fff;
+	padding: 0 3%;
+	margin-bottom: 2px;
+}
+.address_box .fl{
+	width: 82%;
+	margin: 10px 0;
+	
+}
+.information{
+	width: 100%;
+	font-size: 1rem;
+}
+.information .phone{
+	margin-left: 15%;
+}
+.information .default{
+	padding: 3px 16px;
+	font-size: .8rem;
+	border-radius: 20px;
+	background-color: #FCD5D5;
+	color: #f00;
+	margin-right: 0;
+	display: none;
+}
+.information .default.on{
+	display: block;
+}
+.address{
+	width: 100%;
+	font-size: .9rem;
+	padding-top: 10px;
+	line-height: 1.1rem;
+}
+.address_box>.fr{
+	width: 15%;
+	border-left: 1px solid #ccc;
+	padding: 12px 8px;
+	margin-top: 1.5rem;
+	color: #ccc;
+	font-size: .9rem;
+}
+.footer{
+	height: 3rem;
+	width: 100%;
+	background-color: #EE2B2B;
+	color: #fff;
+	text-align: center;
+	line-height: 3rem;
+}
+.pop_up{
+	position: fixed;
+	z-index: 88;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	display: none;
+}
+.set_box{
+	position: absolute;
+	z-index: 90;
+	left: 15%;
+	top: 40%;
+	width: 70%;
+	height: 7rem;
+	background-color: #fff;
+	border-radius: 6px;
+}
+.set_box div:first-child{
+	height: 4rem;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	padding-top: 2rem;
+}
+.set_box .btn{
+	width: 100%;
+	height: 3rem;
+	font-size: 0;
+}
+.set_box .btn span{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	padding-top: .8rem;
+	font-size: 1rem;
+	text-align: center;
+}
+.set_box .btn span.set{
+	border-right: 1px solid #eee;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="format-detection" content="telephone=no">
+ 		<meta name="renderer" content="webkit">
+ 	 	<meta http-equiv="Cache-Control" content="no-transform"/>
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/personal_information.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<span class="back"></span>
+			<h3>个人信息</h3>
+		</div>
+		<div class="mine">
+			<ul>
+				<li>
+					<div class="fl">
+						头像
+					</div>
+					<div class="fr head_img">
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						姓名
+					</div>
+					<div class="fr">
+						<input type="text" value="洋洋1" />
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						昵称
+					</div>
+					<div class="fr">
+						<input type="text" value="坤坤" />
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						性别
+					</div>
+					<div class="fr sex clearfix">
+						<div class="fr">
+							<span class="fl"></span>女
+						</div>
+						<div class="fr">
+							<span class="fl on"></span>男
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						出生日期
+					</div>
+					<div class="fr">
+						<input type="text" value="1991/11" />
+					</div>
+				</li>
+				<li>
+					<div class="fl">
+						身份
+					</div>
+					<div class="fr">
+						<input type="text" value="普通用户" />
+					</div>
+				
+			</ul>
+		</div>
+		<div class="footer">
+			确认修改
+		</div>
+		
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.sex div').click(function(){
+				$(this).children().addClass('on');
+				$(this).siblings().children().removeClass('on');
+			})
+			$('.footer').click(function(){
+//				if(1){
+					location.pathname = 'BaoPin/personal_center.html';
+//				}
+			})
+			
+			
+			var winHeight = $(window).height();  //获取当前页面高度
+			$(window).resize(function () {
+			    var thisHeight = $(this).height();
+			    if ( winHeight - thisHeight > 140 ) {
+			        //键盘弹出
+			        $('.footer').hide();
+			    } else {
+			        //键盘收起
+			        $('.footer').show();
+			    }
+			})
+		</script>
+	</body>
+</html>

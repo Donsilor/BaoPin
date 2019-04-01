@@ -1,0 +1,133 @@
+.mine>div{
+	width: 100%;
+	padding: 0 3%;
+	background-color: #fff;
+	font-size: .9rem;
+}
+.address_box>.fl{
+	width: 82%;
+}
+.address_box .fl>div{
+	width: 100%;
+	height: 2.3rem;
+	line-height: 2.3rem;
+}
+.address_box>.fr{
+	height: 2rem;
+	width: 2rem;
+	margin-top: 1.5rem;
+	background: url(../images/back_r.png) no-repeat center/46%;
+}
+.address_box span{
+	display: inline-block;
+}
+.default{
+	height: 1.2rem;
+	width: 3.8rem;
+	font-size: .8rem;
+	border-radius: 20px;
+	background-color: #FCD5D5;
+	color: #f00;
+	vertical-align: 64%;
+	text-align: center;
+	line-height: 1.2rem;
+}
+.address{
+	width: 75%;
+	height: 2rem;
+	line-height: 2rem;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 2%;
+	text-align: right;
+	text-overflow: ellipsis;
+}
+.pay_way,
+.distribution_way{
+	width: 100;
+	height: 2.2rem;
+	margin-top: 5px;
+	line-height: 2.2rem;
+}
+.merchandise{
+	width: 100%;
+	padding: 0 !important;
+	margin-top: 2rem;
+}
+.merchandise .fl{
+	width: 30%;
+	height: 7rem;
+	text-align: center;
+}
+.merchandise .fl img{
+	height: 66%;
+	width: auto;
+	max-width: 70%;
+	margin-top: 17%;
+}
+.merchandise .fr{
+	width: 70%;
+	height: 7rem;
+	line-height: 2rem;
+	padding-top: .5rem;
+}
+.merchandise p{
+	font-size: .9rem;
+}
+.merchandise span{
+	font-size: .9rem;
+	color: #f00;
+}
+.way>div{
+	display: inline-block;
+	padding: .3rem 1rem;
+	border: 2px solid #eee;
+	border-radius: 20px;
+	margin: 2rem 1rem 2rem 0;
+	background-color: #eee;
+}
+.way>div.on{
+	border-color: #EE2B2B;
+	background-color: #EE2B2B;
+	color: #fff;
+}
+.freight{
+	height: 2rem;
+}
+.confirm{
+	position: fixed;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60%;
+	height: 2.4rem;
+	background-color: #EE2B2B;
+	border-radius: 6px;
+	margin-bottom: 1rem;
+	line-height: 2.4rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1.1rem;
+}
+.dis{
+	display: none;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 3rem;
+}
+.footer span:first-child{
+	line-height: 3rem;
+	color: red;
+}
+.footer span:last-child{
+	height: 2rem;
+	line-height: 1.9rem;
+	width: 6rem;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #EE2B2B;
+	color: #fff;
+}

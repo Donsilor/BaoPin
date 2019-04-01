@@ -1,0 +1,15 @@
+.mine{
+	padding-top: 2.5rem;	
+}
+.mine img{
+	/*margin-top: 0rem;*/
+	width: 100%;
+	height: auto;
+	/*border: 1px solid red;*/
+}
+.mine p{
+	text-align: center;
+	margin-top: 4rem;
+	font-size: .8rem;
+	letter-spacing: 1px;
+}

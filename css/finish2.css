@@ -1,0 +1,98 @@
+.mine{
+	padding-bottom: 3rem;
+}
+.search{
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	padding-top: 2rem;
+	position: relative;
+}
+.search input{
+	width: 80%;
+	height: 2rem;
+	border-radius: 2rem;
+	border: none;
+	background-color: #eee;
+	padding-left: 1.5rem;
+}
+.search_btn{
+	position: absolute;
+	width: 1.4rem;
+	height: 1.4rem;
+	top: 2.3rem;
+	right: 13%;
+	background: url(../images/seek.png) no-repeat center/90%;
+}
+.list_s{
+	width: 100%;
+	background-color: #fff;
+	font-size: 0;
+	position: relative;
+	padding: 1rem 0;
+	margin-bottom: 10px;
+}
+.list_s>div{
+	display: inline-block;
+}
+.list_s .pic{
+	width: 25%;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+	position: relative;
+}
+.list_s .pic img{
+	width: 70%;
+}
+.list_s ul{
+	width: 100%;
+	font-size: .9rem;
+	margin-left: 50%;
+}
+.list_s ul li{
+	margin-top: 5px;
+}
+.list_s ul li:last-child{
+	margin-top: 15px;
+	color: #f00;
+}
+.list_s .num{
+	width: 10%;
+	margin-right: 0;
+	margin-left: 28%;
+}
+
+.total{
+	position: fixed;
+	left: 0;
+	bottom: 10%;
+	width: 100%;
+	background-color: #fff;
+}
+.total .fl{
+	font-size: 1rem;
+	padding-left: 3%;
+	line-height: 3rem;
+}
+.total .fl span{
+	color: #f00;
+}
+.total .fr{
+	width: 40%;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	background-color: #f00;
+	color: #fff;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}
+.list_s .num{
+	font-size: .9rem;
+}
+um{
+	margin-left: 20%;
+	width: 10%;
+}
+.

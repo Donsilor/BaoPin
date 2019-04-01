@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		<meta name="format-detection" content="telephone=no">
+ 		<meta name="renderer" content="webkit">
+ 	 	<meta http-equiv="Cache-Control" content="no-transform"/>
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/line_item.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<span class="back"></span>
+			<h3>订单详情</h3>
+		</div>
+		<div class="mine">
+			<div class="information">
+				<div class="fl">
+					<img src="images/apple.png"/>
+				</div>
+				<div class="fr">
+					<h3>产品名称</h3>
+					<p class="name">精品红富士</p>
+					<p class="price">￥108.00</p>
+				</div>
+			</div>
+		
+			<div class="details">
+				<div>
+					<span>订单编号</span>
+					<span>下单时间</span>
+				</div>
+				<div>
+					<span>支付方式：</span>
+					<span>支付时间：</span>
+				</div>
+				<div>
+					<span>配送方式：中通 888888888</span>
+					<span>发货时间：</span>
+				</div>
+			</div>
+			<div class="site">
+				<span class="icon"></span>
+				<div class="middle_box">
+					<div class="telphone">小木子
+						<span class="fr">135****1111</span>
+					</div>
+					<div class="address">
+						地址：广东省深圳市南山区xx街xx号
+					</div>
+				</div>
+				<span class="back"></span>
+			</div>
+			<div class="total_amount cl">
+				<div class="clearfix">
+					<div class="fl">
+						<span>商品总额</span>
+						<br />
+						<span>运费</span>
+					</div>
+					<div class="freight fl">
+						<span class="all">￥108.00</span>
+						<br />
+						<span>￥0.00</span>
+					</div>
+				</div>
+				<div class="pay">
+					<span class="left">实付款：</span>
+					<span class="right">￥108.00</span>
+				</div>
+				<div class="cancle">取消订单</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var state = sessionStorage.getItem('shipements_state');
+				if(state === '1'){
+					$('.cancle').text('取消订单');
+				}else if(state === '2'){
+					$('.cancle').text('确认收货');
+				}else if(state === '3'){
+					$('.cancle').text('去评价');
+				}
+				
+				$('.cancle').click(function(){
+					if($(this).text() == '取消订单'){
+						location.pathname = 'BaoPin/comment_on_success.html';
+					}else if($(this).text() == '确认收货'){
+						location.pathname = 'BaoPin/comment_on_success.html';
+					}else{
+						location.pathname = 'BaoPin/evaluate.html';
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

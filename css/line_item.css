@@ -1,0 +1,145 @@
+body{
+	background: #fff;
+}
+.mine{
+	margin: 0;
+}
+.information{
+	position: relative;
+	width: 100%;
+	/*height: 16%;*/
+	height: 6rem;
+	background-color: #fff;
+	border-bottom: 0.4rem solid #eee;
+}
+.information .fl{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30%;
+	text-align: center;
+}
+.information .fl img{
+	width: 60%;
+}
+.information .fr{
+	height: 100%;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.information .fr h3{
+	font-size: 1rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.information .fr p.name{
+	font-size: .9rem;
+}
+.information .fr p.price{
+	font-size: .9rem;
+	color: #f00;
+}
+.details{
+	width: 100%;
+	height: auto;
+	border-bottom: 0.4rem solid #eee;
+}
+.details div{
+	font-size: .9rem;
+	height: 4rem;
+	padding-left: 4%;
+	line-height: 1.5rem;
+	border-bottom: 2px solid #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.details div:last-child{
+	border: none;
+}
+.site{
+	width: 100%;
+	height: 4.5rem;
+	border-bottom: 0.4rem solid #eee;
+	font-size: 0;
+}
+.site .icon,
+.site .back{
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+}
+.site .icon{
+	background: url(../images/address.png) no-repeat center/32%;
+}
+.site .back{
+	background: url(../images/back_r.png) no-repeat center/20%;
+}
+.site .middle_box{
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	vertical-align: top;
+}
+.site .telphone,
+.site .address{
+	width: 100%;
+	height: 50%;
+	padding-top: 5%;
+	font-size: .9rem;
+}
+.site .address{
+	font-size: .7rem;
+}
+.total_amount{
+	width: 100%;
+	font-size: .9rem;
+	background-color: #fff;
+	height: 12rem;
+	position: relative;
+}
+.total_amount>div{
+	padding: 0 15px;
+	clear: both;
+}
+.total_amount .freight{
+	margin-left: 55%;
+}
+.freight .all{
+	color: red;
+}
+.total_amount .fl span{
+	display: inline-block;
+	margin-top: .8rem;
+}
+.total_amount .fl span:last-of-type{
+	margin-bottom: .8rem;
+}
+.total_amount .clearfix{
+	border-bottom: 2px solid #eee;
+}
+.total_amount .pay{
+	padding-top: 2%;
+}
+.total_amount .pay .left{
+	line-height: 2rem;
+	font-size: .8rem;
+	margin-left: 57%;
+}
+.total_amount .pay .right{
+	color: #f00;
+}
+.cancle{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	transform: translateX(-50%);
+	height: 2rem;
+	width: 30%;
+	text-align: center;
+	line-height: 2rem;
+	border: 1px solid #999;
+	border-radius: 2rem;
+}

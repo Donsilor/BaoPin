@@ -1,0 +1,35 @@
+.list{
+	position: relative;
+}
+.list .pic{
+	width: 43%;
+}
+.particulars h4{
+	margin-top: 1.5rem !important;
+}
+.particulars p.price{
+	margin-top: 1.5rem !important;
+}
+.list .particulars_btn{
+	/*width: 20%;*/
+	padding: 0 15px;
+	border: 1px solid #999;
+	font-size: 1rem;
+	height: 1.8rem;
+	position: absolute;
+	bottom: 2rem;
+	right: 1rem;
+	text-align: center;
+	line-height: 1.6rem;
+	border-radius: 1.8rem;
+}
+
+.list .pic_box{
+	width: 40%;
+	height: 100%;
+	margin-top: 1.2rem;
+	text-align: center;
+}
+.list .pic_box img{
+	width: 50%;
+}

@@ -1,0 +1,78 @@
+body{
+	background-color: #fff;
+}
+.content{
+	width: 90%;
+}
+.mine img{
+	width: 100%;
+}
+.content{
+	width: 86%;
+	margin: 0 auto;
+}
+.content .pic_box{
+	width: 100%;
+	margin: 1rem 0;
+}
+.content .pic_box img{
+	width: 18%;
+}
+.content .pic_box span{
+	color: #f00;
+	padding-left: 1.5rem;
+}
+.set_meal{
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+.set_meal div{
+	/*width: 20%;*/
+	font-size: .9rem;
+	padding: 5px 12px;
+	border-radius: 20px;
+	background-color: #eee;
+	color: #000;
+}
+.set_meal div.on{
+	background-color: #EE2B2B;
+	color: #fff;
+}
+.number{
+	width: 100%;
+	margin-top: 1rem;
+}
+.number .fl{
+	font-size: .8rem;
+	padding-top: .5rem;
+}
+.number .fr{
+	font-size: 0;
+}
+.number .fr div{
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
+	border: 1px solid #999;
+	font-size: .9rem;
+	text-align: center;
+	line-height: 2rem;
+}
+.number .fr div:nth-child(2){
+	border-left: 0;
+	border-right: 0;
+}
+.confirm{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	background-color: #EE2B2B;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 1rem 0;
+}

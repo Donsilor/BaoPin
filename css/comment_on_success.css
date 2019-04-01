@@ -1,0 +1,22 @@
+body{
+	background-color: #fff;
+}
+.header{
+	border-bottom: 1px solid #eee;
+}
+.information_box{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	height: 5rem;
+	border: 1px solid #aaa;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 1.2rem;
+}
+
+
+
